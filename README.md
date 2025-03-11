@@ -1,1 +1,1 @@
-This website about  games
+This website is about  games
