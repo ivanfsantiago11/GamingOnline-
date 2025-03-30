@@ -1,0 +1,285 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  background-repeat: no-repeat;
+
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(rgba(38, 44, 117, 0.5), rgba(0, 0, 0, 0.5)),
+    url(bgduo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.navContainer {
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  gap: 100px;
+  z-index: 10;
+}
+
+.buttonCon {
+  display: flex;
+  margin-right: 50px;
+  gap: 40px;
+}
+
+#duoNav {
+  color: #8c52ff;
+}
+
+.navButtons {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.377);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.navButtons:hover {
+  color: #8c52ff;
+}
+
+.leftNav {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.leftNav:first-child {
+  margin-right: 1200px;
+  font-family: "Times New Roman", Times, serif;
+  color: #8c52ff;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+#squadNav {
+  margin-right: 100px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.leftContainer {
+  height: 600px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leftContainer h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+  font-size: 150px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  width: 300px;
+  height: 8px;
+  background-color: #8c52ff;
+  border: none;
+  margin: 10px 0;
+}
+.leftContainer h3 {
+  color: rgba(255, 255, 255, 0.726);
+  font-size: 30px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.rightContainer {
+  height: 800px;
+  width: 400px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.rightContainer h2{
+  color: rgba(255, 255, 255, 0.479);
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.card1 {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background-image: url(duopic1.jpg);
+  background-position: center;
+  background-size: 650px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  /* box-shadow: 0 0 0 5px black; */
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #8c52ff;
+}
+
+.card__content1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url(solobg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card1:hover .card__content1 {
+  transform: rotateX(0deg);
+}
+
+.card2 {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background-image: url(DUOPIC2.jpg);
+  background-position: center;
+  background-size: 650px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  /* box-shadow: 0 0 0 5px black; */
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #8c52ff;
+}
+
+.card__content2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url(solobg2.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card2:hover .card__content2 {
+  transform: rotateX(0deg);
+}
+
+.leftCon {
+  position: fixed;
+  left: 0;
+  top: 50vh;
+  z-index: 10;
+  margin-left: 50px;
+  background-color: transparent;
+}
+
+.leftButton {
+  background-color: transparent;
+
+  border: none;
+}
+
+.leftButton:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.rightCon {
+  position: fixed;
+  right: 0;
+  top: 50vh;
+  z-index: 10;
+  margin-right: 50px;
+  background-color: transparent;
+}
+
+.rightButton {
+  background-color: transparent;
+
+  border: none;
+}
+
+.rightButton:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+svg {
+  height: 80px;
+  width: 80px;
+  fill: white;
+}
+
+svg:hover {
+  height: 80px;
+  width: 80px;
+  fill: rgba(255, 255, 255, 0.349);
+}

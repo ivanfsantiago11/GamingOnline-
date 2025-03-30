@@ -1,0 +1,219 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.navContainer {
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  gap: 100px;
+  z-index: 10;
+}
+
+.buttonCon {
+  display: flex;
+  margin-right: 50px;
+  gap: 40px;
+}
+
+#playNav {
+  color: #8c52ff;
+}
+
+.navButtons {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.377);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.navButtons:hover {
+  color: #8c52ff;
+}
+
+.leftNav {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.leftNav:first-child {
+  margin-right: 1100px;
+  font-family: "Times New Roman", Times, serif;
+  color: #8c52ff;
+  font-size: 50px;
+  cursor: default;
+}
+
+#squadNav {
+  margin-right: 100px;
+}
+
+.nanay {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.meaningContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 400px;
+  width: 1300px;
+  font-size: 50px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.726);
+  text-align: flex-start;
+  margin-left: 50px;
+}
+
+.meaningContainer a {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  text-align: start;
+  font-weight: 1000;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: rgb(196, 64, 64);
+}
+
+.meaning {
+  color: rgba(255, 255, 255, 0.884);
+  width: 900px;
+  margin-top: 10px;
+  padding: 0;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header {
+  width: 100%;
+  font-size: 100px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ad8fe9, #8c52ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.829);
+  border-radius: 55px;
+  padding: 0;
+  /* font-size: inherit; */
+  font-family: inherit;
+}
+
+#button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+#button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #8c52ff;
+  border-radius: 1.625rem;
+}
+
+#button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+#button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+#button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+#button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: black;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#button:hover .circle {
+  width: 100%;
+}
+
+#button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+#button:hover .button-text {
+  color: #fff;
+}

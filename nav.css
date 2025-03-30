@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    background-image: url(indexBG.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .navContainer {
+      background-color: transparent;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      gap: 100px;
+      z-index: 10;
+     
+    }
+    
+    .navButtons, .leftNav {
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.377);
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      background-color: transparent;
+      border: none;
+      height: 100%;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    
+    .leftNav {
+      font-size: 80px;
+      display: flex;
+      align-items: center;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    .leftNav:first-child {
+      margin-right: 150px;
+      color: rgb(73, 15, 15);
+      font-size: 50px;
+      cursor: default;
+    }
+    
+    #squadNav {
+      margin-right: 100px;
+    }
+
+   
+    
+    .nanay {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }

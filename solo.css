@@ -1,0 +1,324 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  background-repeat: no-repeat;
+
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(38, 44, 117, 0.5)),
+    url(bgsolo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.navContainer {
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  gap: 100px;
+  z-index: 10;
+}
+
+.buttonCon {
+  display: flex;
+  margin-right: 50px;
+  gap: 40px;
+}
+
+#soloNav {
+  color: #8c52ff;
+}
+
+.navButtons {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.377);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.navButtons:hover {
+  color: #8c52ff;
+}
+
+.leftNav {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.leftNav:first-child {
+  margin-right: 1200px;
+  font-family: "Times New Roman", Times, serif;
+  color: #8c52ff;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+#squadNav {
+  margin-right: 100px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.leftContainer {
+  height: 600px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftContainer h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+  font-size: 150px;
+  /* background: linear-gradient(to right, #8c52ff, #ffffff, #8c52ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  margin-bottom: 5px;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  width: 300px;
+  height: 8px;
+  background-color: #8c52ff;
+  border: none;
+  margin: 10px 0;
+}
+.leftContainer h3 {
+  color: rgba(255, 255, 255, 0.822);
+  font-size: 30px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightContainer {
+  height: 800px;
+  width: 400px;
+  margin-top: 20px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.card {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  overflow: visible;
+width: 600px;
+  height: 500px;
+}
+
+.card h2{
+  color: rgba(255, 255, 255, 0.603);
+  font-size: 50px;
+}
+
+.content {
+  
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+  
+}
+
+.front, .back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 300px;
+  height: 400%;
+  background: linear-gradient(200deg, transparent, #8c52ff, #8c52ff, #8c52ff, #8c52ff, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  background-image: url(solopic2.avif);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  background-image: url(solobg2.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+#bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.leftCon {
+  position: fixed;
+  left: 0;
+  top: 50vh;
+  z-index: 10;
+  margin-left: 50px;
+  background-color: transparent;
+}
+
+.leftButton {
+  background-color: transparent;
+
+  border: none;
+}
+
+.leftButton:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.rightCon {
+  position: fixed;
+  right: 0;
+  top: 50vh;
+  z-index: 10;
+  margin-right: 50px;
+  background-color: transparent;
+}
+
+.rightButton {
+  background-color: transparent;
+
+  border: none;
+}
+
+.rightButton:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+svg {
+  height: 80px;
+  width: 80px;
+  fill: white;
+}
+
+svg:hover {
+  height: 80px;
+  width: 80px;
+  fill: rgba(255, 255, 255, 0.349);
+}
